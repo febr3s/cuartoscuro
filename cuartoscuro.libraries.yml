@@ -1,0 +1,7 @@
+css-global:
+  css:
+    base:
+      css/main.min.css: {}
+js-global:
+  js:
+    js/main.js: {}

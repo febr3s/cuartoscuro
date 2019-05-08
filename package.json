@@ -1,0 +1,26 @@
+{
+  "name": "cuartoscuro",
+  "version": "0.1.0",
+  "description": "Tema Drupal para MOREL",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "clean-css-cli": "^4.3.0",
+    "minifier": "^0.8.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.0",
+    "postcss-cli": "^6.1.2",
+    "uglify-js": "^3.5.10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "minify:js": "echo '=> minify:js' && uglifyjs assets/js/main.js -o js/main.js",
+    "autoprefix": "echo '=> autoprefix' && postcss assets/css/main.css -u autoprefixer -o assets/css/main.prefixed.css",
+    "minify:css": "echo '=> minify:css' && minify -o css/main.min.css assets/css/main.prefixed.css",
+    "dist": "echo '=> dist' && npm run minify:js -s && npm run autoprefix -s && npm run minify:css -s"
+  },
+  "author": "febr3s",
+  "license": "ISC"
+}
