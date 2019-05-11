@@ -1373,6 +1373,9 @@ nav ul {
   padding: 0;
   list-style-type: none; }
 
+ul.navbar li:nth-child(2) {
+  display: block !important; }
+
 /*!
  * Font Awesome Free 5.8.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
