@@ -32,18 +32,22 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes }} class="slimmenu">
+      <ul{{ attributes }} class="navbar">
     {% else %}
-      <ul class="slimmenu">
+      <ul class="navbar slimmenu">
     {% endif %}
+      <li class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+      </li>
     {% for item in items %}
-      <li{{ item.attributes }}>
+      <li{{ item.attributes }} class="w3-bar-item w3-button w3-hide-small">
         {{ link(item.title, item.url) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-        {% endif %}
+        {% endif %} 
       </li>
     {% endfor %}
     </ul>
   {% endif %}
 {% endmacro %}
+<!-- <li href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> -->

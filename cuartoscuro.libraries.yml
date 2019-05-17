@@ -5,3 +5,7 @@ css-global:
 js-global:
   js:
     js/main.js: {}
+    js/jquery.slimmenu.js: {}
+
+  dependencies:
+    - core/jquery
