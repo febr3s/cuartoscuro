@@ -22,7 +22,7 @@
     	<span class="w3-hide-small">
     	 {% if site_name %}{{ site_name }}{% endif %}
     </span> 
-	</br> {% if site_logo %}<img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />{% endif %}</span>
+	{% if site_logo %}</br><img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />{% endif %}</span>
 	{{ site_slogan }}
   </div>
 </div>
