@@ -7,7 +7,7 @@
     "autoprefixer": "^9.5.1",
     "clean-css-cli": "^4.3.0",
     "minifier": "^0.8.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.19.0",
     "postcss-cli": "^6.1.2",
     "uglify-js": "^3.5.10"
